@@ -12,14 +12,14 @@ from PySide.QtGui import *
 from PySide.QtWebKit import *
 
 class Browser(QWidget):
-    
+
     def __init__(self):
         super (Browser, self).__init__()
-        
+
         self.webview = QWebView(self)
         self.webview.load("http://google.com")
         self.setGeometry(0, 0, 800, 600)
-        
+
         self.menu_bar = QHBoxLayout()
         self.main_layout = QVBoxLayout()
-        self.main_layout.
+        self.main_layout.1234
