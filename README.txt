@@ -1,8 +1,9 @@
 README.
 
-La idea és anar ficant aquí tots els exercicis del llibre "Learning Python with RaspberryPi". 
+I want to put here the code from the exercises from the book "Learning Python with the Raspberry Pi".
 
-La veritat és que és un gran llibre i una introducció perfecta :)
+It's a great book and a good intro to Python but there is no source code from the book in Internet.
 
+Some code have mistakes and is incomplete. Obviously these mistakes in the transcription of the code are exclusively mine. 
 
 https://www.raspberrypi.org/blog/learning-python-with-raspberry-pi/
