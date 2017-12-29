@@ -5,6 +5,7 @@ Created on Wed Dec 13 08:33:48 2017
 
 @author: estudis
 """
+import sys
 
 student_data= [["Ben", {"Maths": 67, "English": 78, "Science": 72}],
                ["Mark", {"Maths": 56, "Art": 64, "History": 39, "Geography": 55}],
@@ -69,4 +70,48 @@ class Students():
                 return student.add_mark(subject, mark)
             return "Student not found"
         
+students = Students(student_data)
+print(students.students)
+while True:
+    print("Welcome to the Raspberry Pi student database")
+    print("What can I help you with?")
+    print("Enter 1 to view all report cards")
+    print("Enter 2 to view the report card for a student")
+    print("Enter 3 to add a student")
+    print("Enter 4 to add a mark to a student")
+    print("Enter 5 to exit")    
     
+    try:
+        user_choice = int(input("Choice: "))
+    except ValueError:
+        print("That's not a number I recognise")
+  
+user_choice = 0
+
+if user_choice == 1:
+    students.print_report_cards()
+elif user_choice == 2:
+    enter_student = input("Which student? ")
+    students.print_report_cards(enter_student)
+elif user_choice == 3:
+    enter_student = input("Student name? ")
+    print(students.add_student(enter_student))
+elif user_choice ==4:
+    enter_student = input("Student name? ")
+    enter_subject = input("Subject? ")
+    num_error = True
+    while num_error:
+        num_error = False
+        try:
+            enter_mark = int(input("Mark? "))
+        except ValueError:
+            print("I don't recognise that as a number")
+            num_error = True
+            print(students.add_mark(enter_student, enter_subject, enter_mark))
+elif user_choice == 5:
+    break
+else:
+   print("Unknown choice")
+   input("Press enter to continue")
+    
+print("Goodbye and thank you for using the Raspberry", "Pi Student database")

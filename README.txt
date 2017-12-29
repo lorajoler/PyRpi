@@ -4,3 +4,5 @@ La idea és anar ficant aquí tots els exercicis del llibre "Learning Python wit
 
 La veritat és que és un gran llibre i una introducció perfecta :)
 
+
+https://www.raspberrypi.org/blog/learning-python-with-raspberry-pi/
