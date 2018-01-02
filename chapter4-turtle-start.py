@@ -23,7 +23,7 @@ class TurtleControl(QWidget):
         
         self.controlsLayout = QGridLayout()
         self.controlsLayout.addWidget(self.left_btn, 0, 0)
-        self.controlsLayout.addWidget(self.rigth_btn, 0, 1)
+        self.controlsLayout.addWidget(self.right_btn, 0, 1)
         self.controlsLayout.addWidget(self.distance_spin, 1, 0)
         self.controlsLayout.addWidget(self.move_btn, 1, 1)
         self.setLayout(self.controlsLayout)
