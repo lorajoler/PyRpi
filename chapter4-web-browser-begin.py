@@ -22,4 +22,21 @@ class Browser(QWidget):
 
         self.menu_bar = QHBoxLayout()
         self.main_layout = QVBoxLayout()
-        self.main_layout.1234
+        self.main_layout.addLayout(self.menu_bar)
+        self.main_layout.addWidget(self.webview)
+        self.setLayout(self.main_layout)
+
+class BrowserWindow(QMainWindow):
+    def __init__(self):
+        super(BrowserWindow, self).__init__()
+        self.widget = Browser()
+        self.setCentralWidget(self.widget)
+
+# Create a Qt Application
+app = QApplication(sys.argv)
+window = BrowserWindow()
+window.show()
+
+# Enter QtApplication main loop
+app.exec_()
+sys.exit()
